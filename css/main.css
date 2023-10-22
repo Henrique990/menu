@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf');
+}
+
+@font-face {
     font-family: 'PoppinsRegular';
     src: url('../fonts/Poppins-Regular.otf');
 }
@@ -17,11 +22,11 @@
     --color-separate: #cccccc;
 }
 
-html, body {
-    font-family: 'PoppinsRegular', 'Rubik'. sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-text); 
 
+html, body {
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 b {
@@ -29,10 +34,10 @@ b {
 }
 
 .hidden {
-    display: none !important;
+    display: none!important;
 }
 
-.color-primary  {
+.color-primary {
     color: var(--color-primary);
 }
 
@@ -52,7 +57,7 @@ a.navbar-brand {
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .btn-white.active, .btn-white:hover {
@@ -79,7 +84,7 @@ a.navbar-brand {
 
 .banner {
     padding-top: 110px;
-    padding-botton: 200px;
+    padding-bottom: 200px;
 }
 
 .text-banner {
@@ -95,7 +100,7 @@ a.navbar-brand {
 
 .text-banner p {
     margin-top: 15px;
-    margin-botton: 15px;
+    margin-bottom: 15px;
     font-size: 20px;
 }
 
@@ -114,7 +119,7 @@ a.navbar-brand {
 
 .btn-icon-left span.icon-left {
     display: inline-block;
-    color: var(--color-while);
+    color: var(--color-white);
     background-color: var(--color-primary);
     width: 45px;
     height: 45px;
@@ -130,6 +135,10 @@ a.navbar-brand {
     padding: 9px 15px!important;
     border-radius: 15px!important;
     font-size: 18px!important;
+}
+
+.btn-social {
+    width: 50px;
 }
 
 .card-banner {
@@ -153,8 +162,8 @@ a.navbar-brand {
     border-radius: 20px;
     padding: 15px 20px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
-    border: nome!important;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
+    border: none!important;
 }
 
 .card-case {
@@ -170,7 +179,7 @@ a.navbar-brand {
     font-size: 12px;
     color: var(--color-primary);
     right: 20px;
-    bottom: 10px!important;
+    bottom: 10px;
 }
 
 .servicos {
@@ -189,10 +198,10 @@ a.navbar-brand {
     color: var(--color-black);
     font-size: 40px;
     margin-top: 5px;
-    margin-botton: 30px;
+    margin-bottom: 30px;
 }
 
-.card-icon {
+.card-icon {   
     height: 150px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -218,7 +227,7 @@ a.navbar-brand {
     left: 0;
     right: 0;
     height: 500px;
-    background-image: (../img/bg-icons-2.png);
+    background-image: url(../img/bg-icons-2.png);
 }
 
 .cardapio {
@@ -263,7 +272,7 @@ a.navbar-brand {
 
 .card-item .add-carrinho {
     display: none;
-    /* text-align: center; */
+    text-align: center;
     height: 30px;
     justify-content: center;
     align-items: center;
@@ -304,7 +313,7 @@ a.navbar-brand {
     border-radius: 10px;
     color: var(--color-white);
     background-color: var(--color-black-heavy);
-    margin-left: 15px:
+    margin-left: 15px;
 }
 
 .card-item:hover {
@@ -324,6 +333,7 @@ a.navbar-brand {
     margin-top: 20px;
 }
 
+
 .depoimentos {
     padding-top: 100px;
     padding-bottom: 150px;
@@ -334,7 +344,7 @@ a.navbar-brand {
     left: 0;
     right: 0;
     height: 500px;
-    background-image: url(../img/bg-icons-1.png)
+    background-image: url(../img/bg-icons-1.png);
 }
 
 .card-depoimentos {
@@ -401,7 +411,7 @@ a.navbar-brand {
 
 .texto-depoimento i {
     font-size: 35px;
-    color: var(--coolor-primary);
+    color: var(--color-primary);
 }
 
 .texto-depoimento i:first-child {
@@ -534,7 +544,7 @@ footer {
     content: none;
 }
 
-.etapa.active, .etapa.active::before {
+.etapa.active, .etapa.active::before  {
     background-color: var(--color-primary);
 }
 
@@ -602,7 +612,7 @@ footer {
 
 .container-total {
     padding-top: 20px;
-    border-top: 1px solid var(--color-sepate);
+    border-top: 1px solid var(--color-separate);
 }
 
 .container-total .texto-entrega {
@@ -622,12 +632,12 @@ footer {
 
 .form-control {
     background-color: var(--color-white);
-    color: var(--color-black);!important;
+    color: var(--color-black)!important;
     border-radius: 20px;
     padding: 15px 25px;
-    foknt--size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
-    border: nome!important;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
+    border: none!important;
 }
 
 select.form-control {
@@ -646,7 +656,7 @@ select.form-control {
 
 .img-produto-resumo img {
     width: 50px;
-    border-redius: 11px;
+    border-radius: 11px;
 }
 
 .item-carrinho.resumo {
@@ -673,4 +683,100 @@ select.form-control {
     color: var(--color-black);
     font-size: 20px;
     margin-bottom: 0;
+}
+
+.img-map {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+}
+
+.texto-endereco {
+    margin-bottom: 0;
+    color: var(--color-black);
+}
+
+.cidade-endereco {
+    margin-bottom: 0;
+}
+
+.badge-total-carrinho {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+    right: -5px;
+    top: -5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-carrinho {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    color: var(--color-black-heavy)!important;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container-mensagens {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    color: var(--color-white);
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.toast.red {
+    background-color: var(--color-red);
+}
+
+.toast.green {
+    background-color: var(--color-green);
+}
+
+.carrinho-vazio {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.carrinho-vazio i {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-bottom: 10px;
 }
